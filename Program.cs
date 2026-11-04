@@ -578,7 +578,7 @@ class Program
                 case 4:
                     break;
                 default:
-                    Console.WriteLine("Opcion no valida.");
+                    Console.WriteLine("Opcion no valida en busquedas y reportes. Intente nuevamente.");
                     Pause();
                     break;
             }
