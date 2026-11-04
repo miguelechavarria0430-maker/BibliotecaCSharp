@@ -700,7 +700,7 @@ class Program
                 case 4:
                     break;
                 default:
-                    Console.WriteLine("Opcion no valida.");
+                    Console.WriteLine("Opcion no valida en guardar y cargar datos. Intente nuevamente.");
                     Pause();
                     break;
             }
