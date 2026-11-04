@@ -74,7 +74,7 @@ class Program
                     ConfirmExitAndSave();
                     break;
                 default:
-                    Console.WriteLine("Opcion no valida.");
+                    Console.WriteLine("Opcion no valida. Intente nuevamente.");
                     Pause();
                     break;
             }
