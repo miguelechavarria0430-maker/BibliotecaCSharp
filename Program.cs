@@ -448,7 +448,7 @@ class Program
                 case 6:
                     break;
                 default:
-                    Console.WriteLine("Opcion no valida.");
+                    Console.WriteLine("Opcion no valida en el menu de prestamos. Intente nuevamente.");
                     Pause();
                     break;
             }
