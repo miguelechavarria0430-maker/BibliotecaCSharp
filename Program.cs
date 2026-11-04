@@ -53,7 +53,6 @@ class Program
 
             option = ReadOption();
 
-
             switch (option)
             {
                 case 1:
@@ -315,7 +314,7 @@ class Program
                 case 6:
                     break;
                 default:
-                   Console.WriteLine("Opcion no valida en el menu de usuarios. Intente nuevamente.");
+                    Console.WriteLine("Opcion no valida en el menu de usuarios. Intente nuevamente.");
                     Pause();
                     break;
             }
@@ -746,12 +745,27 @@ class Program
 
     static void ConfirmExitAndSave()
     {
-        Console.Write("¿Desea guardar antes de salir? (S/N): ");
-        string answer = (Console.ReadLine() ?? "").Trim().ToUpper();
+        string answer;
+
+        do
+        {
+            Console.Write("¿Desea guardar antes de salir? (S/N): ");
+            answer = (Console.ReadLine() ?? "").Trim().ToUpper();
+
+            if (answer != "S" && answer != "N")
+            {
+                Console.WriteLine("Opcion no valida. Escriba S o N.");
+            }
+
+        } while (answer != "S" && answer != "N");
 
         if (answer == "S")
         {
             SaveData();
+        }
+        else
+        {
+            Console.WriteLine("Salio sin guardar los datos.");
         }
 
         Console.WriteLine("Gracias por utilizar el sistema de biblioteca.");
