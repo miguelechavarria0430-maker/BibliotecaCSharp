@@ -315,7 +315,7 @@ class Program
                 case 6:
                     break;
                 default:
-                    Console.WriteLine("Opcion no valida.");
+                   Console.WriteLine("Opcion no valida en el menu de usuarios. Intente nuevamente.");
                     Pause();
                     break;
             }
